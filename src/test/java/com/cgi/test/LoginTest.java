@@ -1,4 +1,5 @@
 package com.cgi.test;
+
 import org.testng.Assert;
 import org.testng.annotations.Test;
 
@@ -20,14 +21,18 @@ public class LoginTest extends AutomationWrapper {
 		Assert.assertEquals(actualText, "Quick Launch");
 	}
 
+	// Create a dataprovider invalidLoginData()
+	// john,john123,Invalid credentials
+	// saul,saul123,Invalid credentials
+
 	@Test
-	public void invalidLoginTest() {
+	public void invalidLoginTest(String username, String password, String expectedError) {
 		LoginPage login = new LoginPage(driver);
-		login.enterUsername("Admin12222");
-		login.enterPassword("admin123");
+		login.enterUsername(username);
+		login.enterPassword(password);
 		login.clickOnLogin();
 
 		String actualText = login.getInvalidErrorMessage();
-		Assert.assertEquals(actualText, "Invalid credentials");
+		Assert.assertEquals(actualText, expectedError);
 	}
 }

@@ -10,7 +10,7 @@ public class LoginPage {
 	private By loginLocator = By.xpath("//button[normalize-space()='Login']");
 	private By errorLocator = By.xpath("//p[contains(normalize-space(),'Invalid')]");
 
-	WebDriver driver;
+	private WebDriver driver;
 
 	public LoginPage(WebDriver driver) {
 		this.driver = driver;
