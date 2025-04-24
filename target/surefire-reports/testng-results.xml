@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2025-04-24T14:18:48 IST" name="Surefire suite" finished-at="2025-04-24T14:19:07 IST" duration-ms="18809">
+    <groups>
+    </groups>
+    <test started-at="2025-04-24T14:18:48 IST" name="Surefire test" finished-at="2025-04-24T14:19:07 IST" duration-ms="18809">
+      <class name="com.cgi.test.LoginUITest">
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginUITest@71b1176b]" started-at="2025-04-24T14:18:48 IST" name="setup" finished-at="2025-04-24T14:18:57 IST" duration-ms="9138" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="headerTest()[pri:0, instance:com.cgi.test.LoginUITest@71b1176b]" started-at="2025-04-24T14:18:57 IST" name="headerTest" finished-at="2025-04-24T14:18:59 IST" duration-ms="1608" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- headerTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@71b1176b]" started-at="2025-04-24T14:18:59 IST" name="teardown" finished-at="2025-04-24T14:18:59 IST" duration-ms="557" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+        <test-method is-config="true" signature="setup()[pri:0, instance:com.cgi.test.LoginUITest@71b1176b]" started-at="2025-04-24T14:18:59 IST" name="setup" finished-at="2025-04-24T14:19:06 IST" duration-ms="6956" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setup -->
+        <test-method signature="titleTest()[pri:0, instance:com.cgi.test.LoginUITest@71b1176b]" started-at="2025-04-24T14:19:06 IST" name="titleTest" finished-at="2025-04-24T14:19:06 IST" duration-ms="34" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="teardown()[pri:0, instance:com.cgi.test.LoginUITest@71b1176b]" started-at="2025-04-24T14:19:06 IST" name="teardown" finished-at="2025-04-24T14:19:07 IST" duration-ms="405" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- com.cgi.test.LoginUITest -->
+    </test> <!-- Surefire test -->
+  </suite> <!-- Surefire suite -->
+</testng-results>
