@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.cgi.base.AutomationWrapper;
 import com.cgi.pages.DashboardPage;
 import com.cgi.pages.LoginPage;
+import com.cgi.utils.DataUtils;
 
 public class LoginTest extends AutomationWrapper {
 
@@ -21,11 +22,7 @@ public class LoginTest extends AutomationWrapper {
 		Assert.assertEquals(actualText, "Quick Launch");
 	}
 
-	// Create a dataprovider invalidLoginData()
-	// john,john123,Invalid credentials
-	// saul,saul123,Invalid credentials
-
-	@Test
+	@Test(dataProvider = "invalidLoginData",dataProviderClass = DataUtils.class)
 	public void invalidLoginTest(String username, String password, String expectedError) {
 		LoginPage login = new LoginPage(driver);
 		login.enterUsername(username);
