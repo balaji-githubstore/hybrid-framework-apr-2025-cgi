@@ -1,5 +1,7 @@
 package com.cgi.utils;
 
+import java.io.IOException;
+
 import org.testng.annotations.DataProvider;
 /**
  * Contains all the dataprovider for the entire project
@@ -22,6 +24,16 @@ public class DataUtils {
 		return data;
 	}
 	
-	
+	@DataProvider
+	public String[][] commonDataProvider() throws IOException
+	{
+		String[][] data= ExcelUtils.getSheetIntoTwoDimensionalArray
+				("test-data/orange-test-data.xlsx", "invalidLoginTest");
+		return data;
+	}
 
 }
+
+
+
+
