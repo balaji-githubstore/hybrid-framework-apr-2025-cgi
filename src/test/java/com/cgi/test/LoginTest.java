@@ -10,7 +10,7 @@ import com.cgi.utils.DataUtils;
 
 public class LoginTest extends AutomationWrapper {
 
-	@Test(dataProvider = "commonDataProvider",dataProviderClass = DataUtils.class)
+	@Test(dataProvider = "commonDataProvider",dataProviderClass = DataUtils.class,groups = {"smoke","login"})
 	public void validLoginTest(String username,String password,String expectedValue) {
 		LoginPage login = new LoginPage(driver);
 		login.enterUsername(username);
@@ -22,7 +22,7 @@ public class LoginTest extends AutomationWrapper {
 		Assert.assertEquals(actualText, expectedValue);
 	}
 
-	@Test(dataProvider = "commonDataProvider",dataProviderClass = DataUtils.class)
+	@Test(dataProvider = "commonDataProvider",dataProviderClass = DataUtils.class,groups = {"login"})
 	public void invalidLoginTest(String username, String password, String expectedError) {
 		LoginPage login = new LoginPage(driver);
 		login.enterUsername(username);

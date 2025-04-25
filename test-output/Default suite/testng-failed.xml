@@ -5,9 +5,9 @@
     <classes>
       <class name="com.cgi.test.LoginTest">
         <methods>
+          <include name="validLoginTest" invocation-numbers="0"/>
           <include name="setup"/>
           <include name="teardown"/>
-          <include name="invalidLoginTest"/>
         </methods>
       </class> <!-- com.cgi.test.LoginTest -->
     </classes>
